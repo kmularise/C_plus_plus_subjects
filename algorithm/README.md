@@ -32,3 +32,25 @@ int main() {
     return 0;
 }
 ```
+
+# split
+* split 함수 외우기
+```cpp
+vector<string> split(string input, string delimiter) {
+    vector<string> result;
+    long long pos = 0;
+    string token = "";
+    //while문 외우기
+    while ((pos = input.find(delimiter)) != string::npos) {
+        token = input.substr(0, pos);
+        result.push_back(token);
+        input.erase(0, pos + delimiter.length());
+    }
+    result.push_back(input);
+    return result;
+}
+```
+
+## 포인터
+포인터 : 메모리의 주소를 담는 타입
+*(에스터리스크) : 역참조 연산자, 곱셈, 포인터
