@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   tests.cpp                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yuikim <yuikim@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/28 18:15:11 by yuikim            #+#    #+#             */
-/*   Updated: 2023/07/28 18:15:12 by yuikim           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 // ************************************************************************** //
 //                                                                            //
 //                tests.cpp for GlobalBanksters United                        //
@@ -50,7 +38,7 @@ int		main( void ) {
 	ints_t::iterator	wit_end		= withdrawals.end();
 
 	Account::displayAccountsInfos();
-	std::for_each( acc_begin, acc_end, std::mem_fn( &Account::displayStatus ) );
+	std::for_each( acc_begin, acc_end, std::mem_fun_ref( &Account::displayStatus ) );
 
 	for ( acc_int_t it( acc_begin, dep_begin );
 		  it.first != acc_end && it.second != dep_end;
@@ -60,7 +48,7 @@ int		main( void ) {
 	}
 
 	Account::displayAccountsInfos();
-	std::for_each( acc_begin, acc_end, std::mem_fn( &Account::displayStatus ) );
+	std::for_each( acc_begin, acc_end, std::mem_fun_ref( &Account::displayStatus ) );
 
 	for ( acc_int_t it( acc_begin, wit_begin );
 		  it.first != acc_end && it.second != wit_end;
@@ -70,7 +58,7 @@ int		main( void ) {
 	}
 
 	Account::displayAccountsInfos();
-	std::for_each( acc_begin, acc_end, std::mem_fn( &Account::displayStatus ) );
+	std::for_each( acc_begin, acc_end, std::mem_fun_ref( &Account::displayStatus ) );
 
 	return 0;
 }

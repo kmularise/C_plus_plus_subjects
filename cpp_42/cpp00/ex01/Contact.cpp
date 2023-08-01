@@ -6,7 +6,7 @@
 /*   By: yuikim <yuikim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/28 17:54:53 by yuikim            #+#    #+#             */
-/*   Updated: 2023/07/28 17:55:05 by yuikim           ###   ########.fr       */
+/*   Updated: 2023/08/01 15:04:06 by yuikim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,15 @@ Contact::~Contact() {
 }
 
 void Contact::add() {
-    std::cout << "Enter the user's first name:" << '\n';
+    std::cout << "Enter the user's first name:" << "\n";
     std::cin >> this->firstName;
-    std::cout << "Enter the user's last name:" << '\n';
+    std::cout << "Enter the user's last name:" << "\n";
     std::cin >> this->lastName;
-    std::cout << "Enter the user's nickname:" << '\n';
+    std::cout << "Enter the user's nickname:" << "\n";
     std::cin >> this->nickName;
-    std::cout << "Enter the user's phone number:" << '\n';
+    std::cout << "Enter the user's phone number:" << "\n";
     std::cin >> this->phoneNumber;
-    std::cout << "Enter the user's darkset secret:" << '\n';
+    std::cout << "Enter the user's darkset secret:" << "\n";
     std::cin >> this->darksetSecret;
     std::cout << "Save Success!" << '\n';
 }
@@ -59,16 +59,16 @@ std::string Contact::getTenChars(std::string target) {
 void Contact::displayWithTenChars(int index) {
     std::cout << getTenChars(std::to_string(index)) << "|"
     << getTenChars(this->firstName) << "|" << getTenChars(this->lastName) << "|"
-    << getTenChars(this->nickName) << '\n';
+    << getTenChars(this->nickName) << "\n";
 
     
 }
 
 void Contact::displayFull() {
-    std::cout << "first name : " << this->firstName << std::endl;
-	std::cout << "last name : " << this->lastName << std::endl;
-	std::cout << "nickname : " << this->nickName << std::endl;
-	std::cout << "phone number : " << this->phoneNumber << std::endl;
-	std::cout << "darkest secret : " << this->darksetSecret << std::endl;
+    std::cout << "first name : " << this->firstName << "\n";
+	std::cout << "last name : " << this->lastName << "\n";
+	std::cout << "nickname : " << this->nickName << "\n";
+	std::cout << "phone number : " << this->phoneNumber << "\n";
+	std::cout << "darkest secret : " << this->darksetSecret << "\n";
 
 }
