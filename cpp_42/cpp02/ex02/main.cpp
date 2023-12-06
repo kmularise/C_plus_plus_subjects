@@ -21,5 +21,8 @@ int main( void ) {
 	std::cout << --f << std::endl;
 	std::cout << f-- << std::endl;
 	std::cout << f << std::endl;
+	Fixed g(3.125f);
+	Fixed h(3.25f);
+	std::cout << Fixed::min(g, h) << std::endl;
 	return 0;
 }
