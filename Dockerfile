@@ -4,6 +4,7 @@ FROM ubuntu:latest
 # 필요한 패키지 설치
 RUN apt-get update && \
     apt-get install -y make && \
+    apt-get install -y g++ && \
     rm -rf /var/lib/apt/lists/*
 
 # 작업 디렉토리 설정
