@@ -11,7 +11,15 @@ int main( void ) {
 	std::cout << b << std::endl;
 	std::cout << Fixed::max( a, b ) << std::endl;
 
-	Fixed myFixed(2147483647);
-	std::cout << myFixed;
+	Fixed c(Fixed(1) / Fixed(2));
+	std::cout << c << std::endl;
+	Fixed d(Fixed(4.0f));
+	Fixed e(Fixed(4));
+	std::cout << (d == e) << std::endl;
+	Fixed f(Fixed(1));
+	std::cout << f << std::endl;
+	std::cout << --f << std::endl;
+	std::cout << f-- << std::endl;
+	std::cout << f << std::endl;
 	return 0;
 }

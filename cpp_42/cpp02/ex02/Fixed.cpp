@@ -1,5 +1,6 @@
 #include "Fixed.hpp"
 #include <cmath>
+#include <iomanip>
 
 int Fixed::getRawBits(void) const {
     return rawBits;
@@ -122,6 +123,6 @@ const Fixed& Fixed::max(const Fixed& a, const Fixed& b) {
 }
 
 std::ostream& operator<<(std::ostream & outputStream, Fixed const & source) {
-    outputStream << source.toFloat();
+    outputStream << std::setprecision(10) << source.toFloat() ;
     return outputStream;
 }
