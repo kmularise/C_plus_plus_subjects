@@ -1,4 +1,4 @@
-NAME	= fixed_canonical
+NAME	= fixed_program
 	
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
