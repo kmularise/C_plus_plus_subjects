@@ -6,8 +6,8 @@ RM		= rm -rf
 
 .PHONY: clean re
 
-$(NAME): ClapTrap.cpp main.cpp FragTrap.cpp
-	$(CC) $(FLAGS) ClapTrap.cpp main.cpp FragTrap.cpp -o $(NAME)
+$(NAME): ClapTrap.cpp main.cpp FragTrap.cpp ScavTrap.cpp
+	$(CC) $(FLAGS) ClapTrap.cpp main.cpp FragTrap.cpp ScavTrap.cpp -o $(NAME)
 
 clean:
 	$(RM) $(NAME)

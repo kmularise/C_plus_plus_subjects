@@ -19,7 +19,7 @@ FragTrap& FragTrap::operator=(const FragTrap& obj) {
 }
 void FragTrap::highFivesGuys(void) {
     if (this->energyPoints > 0) {
-        std::cout << "FragTrap " << this->name << " asks for a positive highfive.";
+        std::cout << "FragTrap " << this->name << "asks for a positive highfive.";
     } else {
         std::cout << "FragTrap " << this->name << "can not ask for a positive highfive because it is dead.";
     }
