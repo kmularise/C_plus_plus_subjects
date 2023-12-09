@@ -1,4 +1,4 @@
-NAME	= clap_trap
+NAME	= animal
 	
 CXX		= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
@@ -6,8 +6,8 @@ RM		= rm -rf
 
 .PHONY: clean re
 
-$(NAME): ClapTrap.cpp main.cpp
-	$(CXX) $(CXXFLAGS) ClapTrap.cpp main.cpp -o $(NAME)
+$(NAME): Brain.cpp Cat.cpp Dog.cpp Animal.cpp main.cpp 
+	$(CXX) $(CXXFLAGS) Brain.cpp Cat.cpp Dog.cpp Animal.cpp main.cpp -o $(NAME)
 
 clean:
 	$(RM) $(NAME)
