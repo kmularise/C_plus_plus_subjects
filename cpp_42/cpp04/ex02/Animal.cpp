@@ -11,5 +11,4 @@ Animal& Animal::operator=(const Animal& obj) {
   this->type = obj.type;
   return *this;
 }
-void Animal::makeSound() const { std::cout << "Animal Sound!" << std::endl; }
 const std::string& Animal::getType() const { return this->type; };
